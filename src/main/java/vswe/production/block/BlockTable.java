@@ -29,7 +29,7 @@ public class BlockTable extends BlockContainer {
         setCreativeTab(CreativeTabProduction.getTab());
         setHardness(3.5F);
         setStepSound(soundTypePiston);
-        setUnlocalizedName(Localization.TABLE_NAME);
+        setBlockName(Localization.TABLE_NAME);
     }
     
     @Override

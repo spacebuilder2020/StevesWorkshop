@@ -48,11 +48,11 @@ public enum Upgrade {
     }
 
     Upgrade(MaxCount maxCount, ParentType type) {
-        this(description, maxCount, type == null ? EnumSet.noneOf(ParentType.class) : EnumSet.of(type));
+        this(maxCount, type == null ? EnumSet.noneOf(ParentType.class) : EnumSet.of(type));
     }
 
     Upgrade(MaxCount maxCount) {
-        this(description, maxCount, EnumSet.of(ParentType.CRAFTING, ParentType.SMELTING));
+        this(maxCount, EnumSet.of(ParentType.CRAFTING, ParentType.SMELTING));
     }
 
     public String getUnlocalizedName() {
@@ -92,7 +92,7 @@ public enum Upgrade {
             if (getMaxCount() == 1) {
                 info.add(EnumChatFormatting.YELLOW + Localization.translate(Localization.UPGRADE_NO_STACK));
             }else if (getMaxCount() > 1) {
-                info.add(EnumChatFormatting.YELLOW + String.format(Localization.translate(Localization.UPGRADE_STACK_WELL, getMaxCount())));
+                info.add(EnumChatFormatting.YELLOW + String.format(Localization.translate(Localization.UPGRADE_STACK_WELL), getMaxCount()));
             }else if(!isEnabled()) {
                 info.add(EnumChatFormatting.DARK_RED + Localization.translate(Localization.UPGRADE_DISABLED));
             }

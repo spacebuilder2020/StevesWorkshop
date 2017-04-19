@@ -11,4 +11,5 @@ out/
 *.bat
 *gradle
 *gradlew
+!*.gradle
 logs/

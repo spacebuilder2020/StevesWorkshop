@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StevesWorkshop.iml" filepath="$PROJECT_DIR$/.idea/modules/StevesWorkshop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StevesWorkshop_api.iml" filepath="$PROJECT_DIR$/.idea/modules/StevesWorkshop_api.iml" group="StevesWorkshop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StevesWorkshop_main.iml" filepath="$PROJECT_DIR$/.idea/modules/StevesWorkshop_main.iml" group="StevesWorkshop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StevesWorkshop_test.iml" filepath="$PROJECT_DIR$/.idea/modules/StevesWorkshop_test.iml" group="StevesWorkshop" />
+    </modules>
+  </component>
+</project>
