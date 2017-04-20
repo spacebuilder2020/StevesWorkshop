@@ -32,6 +32,12 @@ public class SlotUnitCraftingStorage extends SlotUnit {
     }
 
     @Override
+    public boolean canSupplyItems()
+    {
+        return table.getUpgradePage().hasGlobalUpgrade(Upgrade.FILTER);
+    }
+
+    @Override
     public boolean shouldSlotHighlightItems() {
         return false;
     }
