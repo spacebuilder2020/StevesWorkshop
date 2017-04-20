@@ -16,7 +16,7 @@ import vswe.production.network.PacketHandler;
 
 
 
-@Mod(modid = "StevesWorkshop", name = StevesProduction.NAME, version = StevesProduction.VERSION)
+@Mod(modid = "StevesWorkshop", name = StevesProduction.NAME, version = StevesProduction.VERSION, acceptableRemoteVersions = "[0.5.0,0.5.2]")
 public class StevesProduction {
     public static final String CHANNEL = "SWorkshop";
     public static final String NAME = "Steve's Workshop";
