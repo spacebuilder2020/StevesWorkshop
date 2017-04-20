@@ -198,7 +198,7 @@ public class UnitCrafting extends Unit {
                     if (i == j) continue;
 
                     ItemStack other = crafting.getStackInSlot(j);
-                    //TODO support ore dictionary and fuzzy etc?. Problem is that it needs to figure out if hte recipe supports it
+                    //TODO support ore dictionary and fuzzy etc?. Problem is that it needs to figure out if the recipe supports it
                     if (other != null && (j >= GRID_SIZE || other.stackSize > itemStack.stackSize) && itemStack.isItemEqual(other) && ItemStack.areItemStackTagsEqual(itemStack, other)) {
                         id = j;
                         itemStack = other;
@@ -377,7 +377,7 @@ public class UnitCrafting extends Unit {
 
         @Override
         public ItemStack getStackInRowAndColumn(int x, int y) {
-            if (x >= 0 && x < INVENTORY_WIDTH){
+            if (x >= 0 && x < INVENTORY_WIDTH && y < INVENTORY_HEIGHT){
                 int id = x + y * INVENTORY_WIDTH;
                 return this.getStackInSlot(id);
             }else{
