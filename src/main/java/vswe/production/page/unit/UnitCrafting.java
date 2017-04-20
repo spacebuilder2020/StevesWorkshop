@@ -319,12 +319,13 @@ public class UnitCrafting extends Unit {
 
         @Override
         public ItemStack getStackInSlot(int id) {
-            return items[id];
+            return id < items.length  ? items[id] : null;
         }
 
         @Override
         public void setInventorySlotContents(int id, ItemStack item) {
-            items[id] = item;
+            if (id < items.length)
+                items[id] = item;
         }
     }
 
